@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function($){
+        var q=encodeURIComponent($('#address').text());
+        $('#map').attr('src', 'https://www.google.com/maps/embed/v1/place?key=AIzaSyCoiF1SlcuQPqoRdbP58ZCi3YrPx4wvMfg&q='+q);
+    })
+
+</script>
+<body>
+<span id="address"> 410 walker street Lowell MA 01851 </span>
+<iframe id="map" width="600" height="450"></iframe>
+<a href="http://www.lets-develop.com/html5-html-css-css3-php-wordpress-jquery-javascript-photoshop-illustrator-flash-tutorial/java-script-jquery-j-query-javascript-programming/how-to-dynamically-generate-google-map-from-address/">Code Location</a>
+<a href="http://jsfiddle.net/doktormolle/pkjq1hrb/">Location 2</a>
+</body>
+</html>
